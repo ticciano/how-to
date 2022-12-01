@@ -20,16 +20,11 @@ Follow the below link to setup SSH login without password:
 
 Now you should be able to SSH into the remote machine without password.
 
-```bash
-ssh -i /home/user/.ssh/id_rsa user@remotehost.com
-```
+`ssh -i /home/user/.ssh/id_rsa user@remotehost.com`
 
 Rsync should now complete without prompting for a password. Lets take a backup.
 
-```bash
-rsync -avz -e "ssh -i /home/user/.ssh/id_rsa" /root/test/ remote_user@remotehost.com:/backup/destination/directory/
-
-```
+`rsync -avz -e "ssh -i /home/user/.ssh/id_rsa" /root/test/ remote_user@remotehost.com:/backup/destination/directory/`
 
 Still if your are getting problem, please make sure you have set proper permission to read from the source “**/root/test/**” and to write to the target “**remote_user@remotehost.com:/backup/destination/directory/**” also make sure ssh session is establishing between the two hosts without password.
 
@@ -39,12 +34,10 @@ Now set cron jop for automate this process on scheduled time.
 
 # crontab -e
 
-```bash
-30 2 * * * rsync -avz -e "ssh -i /home/user/.ssh/id_rsa" /root/test/ remote_user@remotehost.com:/backup/destination/directory/
-```
+`30 2 * * * rsync -avz -e "ssh -i /home/user/.ssh/id_rsa" /root/test/ remote_user@remotehost.com:/backup/destination/directory/`
 
 After you are done configuring Cron, press escape, and then type “:wq” (without the quotes) and press enter. This will save your changes in vi.
 
 In the above cron it is scheduled to perform automatic backup on daily at 2:30 PM. Most people will just want a simple weekly or daily backup, and what we have shown you can easily accomplish that. For more info about Cron, please see my previous article.
 
-
+[Source - www.looklinux.com](https://www.looklinux.com/how-to-setup-automatic-remote-backup-with-rsync/)

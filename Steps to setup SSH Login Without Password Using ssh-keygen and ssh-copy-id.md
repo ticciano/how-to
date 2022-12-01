@@ -27,9 +27,6 @@ The key fingerprint is:
 33:b3:fe:af:95:95:18:11:31:d5:de:96:2f:f2:35:f9 user@local-host
 ```
 
-
-
-
 ## Step #2: Copy Public Key on Remote Host using ssh-copy-id
 
 ```bash
@@ -42,8 +39,6 @@ Make sure we haven't added any extra keys.
 Note :- ssh-copy-id will append the keys to the remote host’s .ssh/authorized_key.
 ```
 
-
-
 ## Step #3: Login to Remote Host without Password
 
 ```bash
@@ -55,4 +50,4 @@ Last login: Mon Feb 17 17:22:33 2017 from 192.168.1.5
 user@remote-host$ [Here you are on remote host]
 ```
 
-
+[Source - www.looklinux.com](https://www.looklinux.com/steps-to-setup-ssh-login-without-password-using-ssh-keygen-and-ssh-copy-id/)
