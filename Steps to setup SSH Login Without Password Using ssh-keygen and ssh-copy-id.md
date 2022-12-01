@@ -47,7 +47,12 @@ Note :- ssh-copy-id will append the keys to the remote host’s .ssh/authorized
 ## Step #3: Login to Remote Host without Password
 
 ```bash
+user@local-host$ ssh remote-host
+Last login: Mon Feb 17 17:22:33 2017 from 192.168.1.5
 
+[Here SSH will not ask for type password.]
+
+user@remote-host$ [Here you are on remote host]
 ```
 
 
