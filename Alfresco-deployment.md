@@ -1,11 +1,5 @@
 # Alfresco docker deployment
 
-[Source] (https://docs.alfresco.com/content-services/community/install/containers/docker-compose/)
-[Source] (https://docs.alfresco.com/content-services/6.0/admin/metadata-extraction/)
-[Source] (https://docs.alfresco.com/content-services/5.2/admin/import-transfer/)
-
-
-
 1. Clone the project locally, and change directory to the project’s `docker-compose` folder:
 
 ```
@@ -67,4 +61,8 @@ Sample metadata for file SEI.pdf
   </properties>
 ```
 
+
+[Source] (https://docs.alfresco.com/content-services/community/install/containers/docker-compose/)<br>
+[Source] (https://docs.alfresco.com/content-services/6.0/admin/metadata-extraction/)<br>
+[Source] (https://docs.alfresco.com/content-services/5.2/admin/import-transfer/)<br>
 
