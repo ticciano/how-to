@@ -1,6 +1,8 @@
 # Alfresco docker deployment
 
-[Fonte] (https://docs.alfresco.com/content-services/community/install/containers/docker-compose/)
+[Source] (https://docs.alfresco.com/content-services/community/install/containers/docker-compose/)
+[Source] (https://docs.alfresco.com/content-services/6.0/admin/metadata-extraction/)
+[Source] (https://docs.alfresco.com/content-services/5.2/admin/import-transfer/)
 
 
 
