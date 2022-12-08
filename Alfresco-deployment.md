@@ -7,8 +7,7 @@
  cd acs-deployment/docker-compose
 ```
 
-2.   Deploy Community Edition, including the repository, Share, Postgres database, Search Services, etc.:
-
+2. Deploy Community Edition, including the repository, Share, Postgres database, Search Services, etc.:
 ```
  docker-compose -f community-docker-compose.yml up
 ```
